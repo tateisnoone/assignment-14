@@ -1,0 +1,30 @@
+header {
+  .container {
+    @extend %mycontainer;
+    @include flex(row, space-between, center, nowrap);
+    height: 84px;
+  }
+  .fa-bars {
+    display: none;
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+  nav {
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+  ul {
+    @include flex(row, space-between, center, nowrap);
+    width: 554px;
+    li {
+      color: #636060;
+      font-family: Helvetica;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
