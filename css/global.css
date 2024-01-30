@@ -177,7 +177,7 @@ header ul li {
 }
 
 .sec-1 .sectiondiv {
-  background-image: url("/images/Rectangle1.png");
+  background-image: url("../images/Rectangle1.png");
   background-size: cover;
   height: 606px;
   display: flex;
