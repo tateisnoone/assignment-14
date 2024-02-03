@@ -20,11 +20,9 @@ header {
     width: 554px;
     li {
       color: #636060;
-      font-family: Helvetica;
+      font-family: $myfont;
       font-size: 17px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      @include lightfont;
     }
   }
 }

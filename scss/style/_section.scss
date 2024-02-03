@@ -8,12 +8,10 @@
     margin-bottom: 85px;
   }
   h1 {
-    color: #fff;
-    font-family: Helvetica;
+    color: $mycolor;
+    font-family: $myfont;
     font-size: 79px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @include boldfont;
     @media (max-width: 950px) {
       font-size: 50px;
     }
@@ -22,12 +20,10 @@
     }
   }
   h6 {
-    color: #fff;
-    font-family: Helvetica;
+    color: $mycolor;
+    font-family: $myfont;
     font-size: 19px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @extend %lightfont;
     @media (max-width: 950px) {
       font-size: 15px;
     }
@@ -56,29 +52,23 @@
 
     h4 {
       color: #636060;
-      font-family: Helvetica;
+      font-family: $myfont;
       font-size: 17px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      @extend %lightfont;
       margin-bottom: 9px;
     }
     h3 {
       color: #010101;
-      font-family: Helvetica;
+      font-family: $myfont;
       font-size: 28px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      @extend %lightfont;
       margin-bottom: 37px;
     }
     p {
       color: #636060;
-      font-family: Helvetica;
+      font-family: $myfont;
       font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      @extend %lightfont;
     }
   }
   .right {
@@ -106,22 +96,18 @@
       }
       h4 {
         color: #343232;
-        font-family: Helvetica;
+        font-family: $myfont;
         font-size: 19px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @extend %lightfont;
         @media (max-width: 350px) {
           font-size: 15px;
         }
       }
       p {
         color: #636060;
-        font-family: Helvetica;
+        font-family: $myfont;
         font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @extend %lightfont;
         @media (max-width: 350px) {
           font-size: 14px;
         }
